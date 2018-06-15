@@ -27,7 +27,7 @@ class Song
     song = self.new(name)
 
     song.artist_name= (filename.split(" - ")[0])
-    song.artist.save
+    song.artist.save if song.artist != nil
 
     song
 
