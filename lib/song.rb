@@ -27,7 +27,7 @@ class Song
     song = self.new(name)
 
     song.artist_name= (filename.split(" - ")[0])
-    @@all << song.artist
+    song.artist.save
 
     song
 
